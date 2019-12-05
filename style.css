@@ -1,5 +1,5 @@
 #hero-vid {
-    position: fixed;
+    /* position: fixed; */
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -17,5 +17,13 @@
 } */
 
 #navbar-custom {
+    background: black;
+}
+
+#portfolio-custom {
+    background: blue;
+}
+
+#contact-custom {
     background: black;
 }
