@@ -1,137 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <!-- <script src="https://use.fontawesome.com/fa204655e1.js"></script> -->
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Joe Williams</title>
 </head>
+
 <body>
     <!-- Start Navbar -->
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" id="navbar-custom">
-            <div class="navbar-brand">
-              <!-- <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-              </a> -->
-          
-              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-              </a>
-            </div>
-          
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
                 <a class="navbar-item">
-                  Joe Williams
-                </a>
-          
-                <a class="navbar-item">
-                  Home
+                    Joe Williams
                 </a>
 
-                <a class="navbar-item">
+                <a class="navbar-item" href="#hero-vid">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="#about-div">
                     About
                 </a>
 
-                <a class="navbar-item">
-                        Portfolio
-                    </a>
-                
-                    <a class="navbar-item" href="#contact-custom">
-                            Contact
-                        </a>
-          
-              </div>
-          
-            
+                <a class="navbar-item" href="#portfolio-custom">
+                    Portfolio
+                </a>
+
+                <a class="navbar-item" href="#contact-custom">
+                    Contact
+                </a>
             </div>
-          </nav>
+            <div class="top-nav-right">
+
+                <a href="https://www.linkedin.com/in/josephscottwilliams/" target="_blank">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+                <a href="https://github.com/josephscottwilliams" target="_blank"><i
+                        class="fab fa-github-square fa-3x"></i></a>
+                <a href="https://www.facebook.com/josephscottwilliams" target="_blank"><i
+                        class="fab fa-facebook-square fa-3x"></i></a>
+
+
+            </div>
+
+        </div>
+    </nav>
     <!-- End Navbar -->
     <!-- Hero Start -->
-    <section class="hero is-link is-fullheight-with-navbar" id="hero-vid">
-            <video autoplay muted loop id="myVideo">
-                    <source src="images/Blurred Video of Scripts Being Typed.mp4" type="video/mp4">
-                  </video>
-                  
-            <div class="hero-body" >
+    <section class="hero is-fullheight" id="hero-vid">
 
-                  
+        <video autoplay muted loop>
+            <source src="images/Blurred Video of Scripts Being Typed.mp4" type="video/mp4">
+        </video>
 
-              <div class="container">
-                <p class="title" id="hero-text">
-                  Joe Williams
-                </p>
-                <h2>Full-Stack Web Developer</h2>
-              </div>
-            </div>
-          </section>
+        <div class="hero-text">
+            <h1>
+                Joe Williams
+            </h1>
+            <h2>Full-Stack Web Developer</h2>
+        </div>
+
+    </section>
     <!-- Hero End -->
     <!-- About Start -->
-    <section class="hero is-success is-fullheight">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title">
-                  About Section
+    <section class="hero is-fullheight-with-navbar" id="about-div">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title" style="text-align: center">
+                    ABOUT
                 </h1>
-                <h2 class="subtitle">
-                  Optional Subtitle
-                </h2>
-              </div>
             </div>
-          </section>
+        </div>
+
+        <div class="columns">
+            <div class="column is-6">
+                <section role="region" class="column">
+                    <div class="column img-container">
+                        <img src="images/joewilliams_linkedin_photo.jpeg" class="image is-3b4 profile-pic"
+                            alt="profile picture">
+                    </div>
+                    <div class="title" style="text-align: center">
+                        <h2><strong>Joe Williams</strong></h2>
+                    </div>
+                    <div class="column text-container" id="profile-bio">
+                        Full stack web developer by day and film composer by night. Effective at finding solutions that
+                        are efficient as well as elegant. I love working on creative projects more than I like to eat or
+                        sleep! I am always looking to improve and enjoy collaborating with others to help achieve their
+                        vision!
+                </section>
+            </div>
+
+            <div class="column is-6" id="progressBarDiv">
+                <h3 class="progress-title">
+                    <i class="fab fa-html5"></i>
+                    HTML5</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="background-color: #5972ff; width: 90%;">
+                        <div class="progress-value">90%</div>
+                    </div>
+                </div>
+                <h3 class="progress-title"><i class="fab fa-js-square"></i> Javascript</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="background-color: rgb(233, 108, 6); width: 60%;">
+                        <div class="progress-value">60%</div>
+                    </div>
+                </div>
+                <h3 class="progress-title"><i class="fab fa-css3-alt"></i> CSS3</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="background-color: red; width: 85%;">
+                        <div class="progress-value">85%</div>
+                    </div>
+                </div>
+                <h3 class="progress-title"><i class="fab fa-react"></i> React.js</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="background-color: green; width: 65%;">
+                        <div class="progress-value">65%</div>
+                    </div>
+                </div>
+                <h3 class="progress-title"><i class="fab fa-node-js"></i> Node.js</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="background-color: purple; width: 40%;">
+                        <div class="progress-value">40%</div>
+                    </div>
+                </div>
+                <h3 class="progress-title"><i class="fas fa-database"></i> MySQL/MongoDB</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="background-color: yellowgreen; width: 40%;">
+                        <div class="progress-value">40%</div>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
     <!-- About End -->
     <!-- Portfolio Start -->
-    <section class="hero is-success is-fullheight">
-            <div class="hero-body" id="portfolio-custom">
-              <div class="container">
-                <h1 class="title">
-                  Portfolio Section
+    <section class="hero is-success is-fullheight-with-navbar">
+        <div class="hero-body" id="portfolio-custom">
+            <div class="container">
+                <h1 class="title" style="text-align: center">
+                    PROJECTS
                 </h1>
-                <h2 class="subtitle">
-                  Optional Subtitle
-                </h2>
-              </div>
+
+                <div class="columns">
+
+                    <div class="column">
+                        <div class="columns" id="project-container">
+                            <div class="column"><a href="https://skyline-studios-app.herokuapp.com/"
+                                    target="_blank"><img src="images/SkylineStudios.png" alt="1"
+                                        class="project-img"></a></div>
+                            <div class="column"><a href="https://josephscottwilliams.github.io/LivingLifeCounseling/"
+                                    target="_blank"><img src="images/LivingLifeCounseling.png" alt="2"
+                                        class="project-img"></a></div>
+                            <div class="column"><a href="https://fantasticfour-project2.herokuapp.com/index.html"
+                                    target="_blank"><img src="images/Stachr.png" alt="3" class="project-img"></a></div>
+                            <div class="column"><a href="https://tlacy1000.github.io/What-to-watch/moviesuggestion.html"
+                                    target="_blank"><img src="images/MovieTime.png" alt="3" class="project-img"></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-          </section>
+
+
+
+        </div>
+
+        </div>
+        </div>
+    </section>
     <!-- Portfolio End -->
     <!-- Contact Start -->
-    <section class="hero is-success is-fullheight">
-            <div class="hero-body" id="contact-custom">
-              <div class="container">
-                <h1 class="title">
-                 Contact Section
+    <section class="hero is-fullheight" id="contact-custom">
+        <div>
+            <div class="container">
+                <h1 class="title" style="text-align: center">
+                    CONTACT
                 </h1>
-                <h2 class="subtitle">
-                  Optional Subtitle
-                </h2>
-              </div>
+                <div class="columns">
+                    <div class="column is-3"></div>
+                    <div class="column is-6">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Name">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-danger" type="email" placeholder="youremail@youremail.com">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </span>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Message..."></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link" style="float: right">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-3"></div>
+                </div>
             </div>
-          </section>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="content has-text-centered">
+
+            <a href="https://www.linkedin.com/in/josephscottwilliams/" target="_blank">
+                <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+            <a href="https://github.com/josephscottwilliams" target="_blank"><i
+                    class="fab fa-github-square fa-3x"></i></a>
+            <a href="https://www.facebook.com/josephscottwilliams" target="_blank"><i
+                    class="fab fa-facebook-square fa-3x"></i></a>
+
+            <br>
+            <br>
+
+            <p>
+                Joe Williams &copy; 2019
+            </p>
+    </section>
+
     <!-- Contact End -->
 
 
     <!-- Footer Start -->
-    <footer class="footer">
-            <div class="content has-text-centered">
 
-                    <i class="fab fa-linkedin fa-3x"></i>
-                    <i class="fab fa-github-square fa-3x"></i>
-                    <i class="fab fa-facebook-square fa-3x"></i>
-
-              <p>
-                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-              </p>
-            </div>
-          </footer>
     <!-- Footer End -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script src="javascript/jquery.waypoints.min.js"></script>
+    <!-- <script src="js/jquery.waypoints.min.js"></script> -->
+    <!-- <script href="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script> -->
+    <script src="javascript/index.js"></script>
+
+
 </body>
+
 </html>
